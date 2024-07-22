@@ -15,9 +15,13 @@
         <img src="media/Logo.png" alt="logo_alura">
     </header>
 
-    <!-- Contededor conde se colocarán los elementos de la Página -->
+    <!-- Contededor donde se colocarán los elementos de la Página -->
     <div class="contenedor-principal">
+
+        <!-- Sección donde se coloca el texto a encriptar o desencriptar -->
         <div class="texto-encriptar">
+
+            <!-- Textarea para colocar el texto a encriptar o desencriptar -->
             <div class="campo-encriptar">
                 <textarea class="texto-acciones" name="texto-acciones" id="texto-acciones"
                     placeholder="Ingrese el texto aquí"></textarea>
@@ -26,16 +30,22 @@
                 <p>Solo letras minúsculas y sin acentos.</p>
             </div>
             <div class="botones-acciones">
-                <button class="boton-activado-1" type="button">Encriptar</button>
+                <button class="boton-activado-1" type="button" onclick="encriptar()" >Encriptar</button>
                 <button class="boton-desactivado" type="button">Desencriptar</button>
             </div>
+
         </div>
+        <!-- Sección donde se coloca el texto encriptado o desencriptado -->
         <div class="texto-desencriptar">
+
+            <!-- Sección que se mostrará por fefecto y no haya un texto encriptado o desencriptado -->
             <div class="no-encontrado">
                 <img class="img-no-encontrado" src="/media/Muñeco.png" alt="imagen_no_encontrado">
                 <p class="txt-ne-titulo">Ningún mensaje fue encontrado</p>
                 <p class="txt-ne-contenido">Ingresa el texto que desees encriptar o desencriptar</p>
             </div>
+
+            <!-- Sección que se mostrará cuando haya un texto encriptado o desencriptado -->
             <div class="encontrado" hidden>
                 <div class="texto-resultado">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maxime minima quas eos illum, dolores
@@ -45,6 +55,7 @@
                     <button class="boton-activado-2" type="button">Copiar</button>
                 </div>
             </div>
+
         </div>
     </div>
 
