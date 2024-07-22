@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Encabezado de la página Web -->
+    <header>
+        <img src="media/Logo.png" alt="logo_alura">
+    </header>
+
+    <!-- Contededor conde se colocarán los elementos de la Página -->
+    <div class="contenedor-principal">
+        <div class="texto-encriptar">
+            <div class="campo-encriptar">
+                <textarea class="texto-acciones" name="texto-acciones" id="texto-acciones"
+                    placeholder="Ingrese el texto aquí"></textarea>
+            </div>
+            <div class="advertencia">
+                <p>Solo letras minúsculas y sin acentos.</p>
+            </div>
+            <div class="botones-acciones">
+                <button class="boton-activado-1" type="button">Encriptar</button>
+                <button class="boton-desactivado" type="button">Desencriptar</button>
+            </div>
+        </div>
+        <div class="texto-desencriptar">
+            <div class="no-encontrado">
+                <img class="img-no-encontrado" src="/media/Muñeco.png" alt="imagen_no_encontrado">
+                <p class="txt-ne-titulo">Ningún mensaje fue encontrado</p>
+                <p class="txt-ne-contenido">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div class="encontrado" hidden>
+                <div class="texto-resultado">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maxime minima quas eos illum, dolores
+                    nobis dolor sunt incidunt sequi quo, temporibus tempora ducimus? Dolor ab officiis id a nobis!
+                </div>
+                <div class="boton-copiar">
+                    <button class="boton-activado-2" type="button">Copiar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pié de Página con mis datos -->
+    <footer>
+
+    </footer>
+
+</body>
+
+</html>

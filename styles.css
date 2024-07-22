@@ -1,0 +1,97 @@
+/* Sección de etiquetas globales */
+
+body{
+    background-color: #F3F5FC;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+textarea{
+    outline: none;
+    border: none;
+    resize: none;
+    color: #0A3871;
+    font-size: 25px;
+    font-weight: bold;
+    background-color: transparent;
+    width: 90%;
+    height: auto;
+}
+
+textarea::placeholder{
+    color: #0A3871;
+}
+
+/* Sección de ontenido principal */
+
+.contenedor-principal{
+    text-align: center;
+}
+
+/* Sección de encriptar o desencriptar (Derecho) */
+
+.texto-encriptar{
+    font-size: 24;
+    width: 57%;
+    display: inline-block;
+    padding: 20px;
+    height: 200px;
+}
+
+.advertencia{
+    color: #495057;
+    margin-bottom: 1rem;
+}
+
+/* Sección de resultado (Izquierda) */
+
+.texto-desencriptar{
+    background-color: white;
+    width: 30%;
+    display: inline-block;
+    border-radius: 1rem;
+    padding: 20px;
+}
+
+.texto-resultado{
+    margin-bottom: 1rem;
+}
+
+.txt-ne-titulo{
+    font-weight: bold;
+    font-size: 20px;
+}
+.txt-ne-contenido{
+    font-size: 15px;
+}
+
+.img-no-encontrado{
+    width: 75%;
+}
+
+/* Botones */
+
+.boton-activado-1{
+    background-color: #0A3871;
+    color: white;
+    padding: 10px;
+    width: 20%;
+    border-radius: 1rem;
+    border-color: #0A3871;
+}
+.boton-activado-2{
+    background-color: transparent;
+    color: 0A3871;
+    padding: 10px;
+    width: 20%;
+    border-radius: 1rem;
+    border-color: #0A3871;
+}
+
+.boton-desactivado{
+    background-color: #D8DFE8;
+    color: #0A3871;
+    padding: 10px;
+    width: 20%;
+    border-radius: 1rem;
+    border-color: #0A3871;
+}
