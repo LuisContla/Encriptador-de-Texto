@@ -5,7 +5,11 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-textarea{
+textarea::placeholder{
+    color: #0A3871;
+}
+
+.texto-acciones{
     outline: none;
     border: none;
     resize: none;
@@ -17,8 +21,16 @@ textarea{
     height: auto;
 }
 
-textarea::placeholder{
-    color: #0A3871;
+.txt-res{
+    outline: none;
+    border: none;
+    resize: none;
+    color: 0A3871;
+    font-size: 15px;
+    font-weight: bold;
+    background-color: transparent;
+    width: 90%;
+    height: auto;
 }
 
 /* Sección de ontenido principal */
@@ -77,21 +89,26 @@ textarea::placeholder{
     width: 20%;
     border-radius: 1rem;
     border-color: #0A3871;
+    font-weight: bold;
 }
 .boton-activado-2{
     background-color: transparent;
-    color: 0A3871;
-    padding: 10px;
-    width: 20%;
-    border-radius: 1rem;
-    border-color: #0A3871;
-}
-
-.boton-desactivado{
-    background-color: #D8DFE8;
     color: #0A3871;
     padding: 10px;
     width: 20%;
     border-radius: 1rem;
     border-color: #0A3871;
+    font-weight: bold;
+}
+
+footer{
+    padding: 20px;
+    background-color: #0A3871;
+    color: white;
+    text-align: center;
+}
+
+.contacto{
+    color: white;
+    font-weight: bold;
 }

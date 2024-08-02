@@ -30,8 +30,8 @@
                 <p>Solo letras minúsculas y sin acentos.</p>
             </div>
             <div class="botones-acciones">
-                <button class="boton-activado-1" type="button" onclick="validar(1)" >Encriptar</button>
-                <button class="boton-desactivado" type="button" onclick="validar(2)" >Desencriptar</button>
+                <button class="boton-activado-1" type="button" onclick="validar(1)">Encriptar</button>
+                <button class="boton-activado-2" type="button" onclick="validar(2)">Desencriptar</button>
             </div>
 
         </div>
@@ -48,10 +48,9 @@
             <!-- Sección que se mostrará cuando haya un texto encriptado o desencriptado -->
             <div class="encontrado" >
                 <div id="texto-resultado" class="texto-resultado">
-                    <textarea name="txt-res" id="txt-res" readonly>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maxime minima quas eos illum, dolores
+                    <textarea name="txt-res" id="txt-res" class="txt-res" readonly>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maxime minima quas eos illum, dolores
                         nobis dolor sunt incidunt sequi quo, temporibus tempora ducimus? Dolor ab officiis id a nobis!
-                    </textarea>                    
+                    </textarea>
                 </div>
                 <div class="boton-copiar">
                     <button class="boton-activado-2" type="button" onclick="copiarContenido()">Copiar</button>
@@ -63,7 +62,9 @@
 
     <!-- Pié de Página con mis datos -->
     <footer>
-
+        <p>Página creada por <a class="contacto"
+                href="https://www.linkedin.com/in/luis-andr%C3%A9s-contla-mota-b2782a313/">Luis Andrés Contla Mota</a>
+        </p>
     </footer>
 
 </body>
