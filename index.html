@@ -30,8 +30,8 @@
                 <p>Solo letras minúsculas y sin acentos.</p>
             </div>
             <div class="botones-acciones">
-                <button class="boton-activado-1" type="button" onclick="encriptar()" >Encriptar</button>
-                <button class="boton-desactivado" type="button">Desencriptar</button>
+                <button class="boton-activado-1" type="button" onclick="validar(1)" >Encriptar</button>
+                <button class="boton-desactivado" type="button" onclick="validar(2)" >Desencriptar</button>
             </div>
 
         </div>
@@ -39,17 +39,19 @@
         <div class="texto-desencriptar">
 
             <!-- Sección que se mostrará por fefecto y no haya un texto encriptado o desencriptado -->
-            <div class="no-encontrado">
+            <div class="no-encontrado" hidden>
                 <img class="img-no-encontrado" src="/media/Muñeco.png" alt="imagen_no_encontrado">
                 <p class="txt-ne-titulo">Ningún mensaje fue encontrado</p>
                 <p class="txt-ne-contenido">Ingresa el texto que desees encriptar o desencriptar</p>
             </div>
 
             <!-- Sección que se mostrará cuando haya un texto encriptado o desencriptado -->
-            <div class="encontrado" hidden>
-                <div class="texto-resultado">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maxime minima quas eos illum, dolores
-                    nobis dolor sunt incidunt sequi quo, temporibus tempora ducimus? Dolor ab officiis id a nobis!
+            <div class="encontrado" >
+                <div id="texto-resultado" class="texto-resultado">
+                    <textarea name="txt-res" id="txt-res" readonly>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maxime minima quas eos illum, dolores
+                        nobis dolor sunt incidunt sequi quo, temporibus tempora ducimus? Dolor ab officiis id a nobis!
+                    </textarea>                    
                 </div>
                 <div class="boton-copiar">
                     <button class="boton-activado-2" type="button">Copiar</button>
