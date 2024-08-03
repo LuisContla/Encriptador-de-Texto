@@ -39,14 +39,14 @@
         <div class="texto-desencriptar">
 
             <!-- Sección que se mostrará por fefecto y no haya un texto encriptado o desencriptado -->
-            <div class="no-encontrado" hidden>
+            <div class="no-encontrado" id="no-encontrado">
                 <img class="img-no-encontrado" src="/media/Muñeco.png" alt="imagen_no_encontrado">
                 <p class="txt-ne-titulo">Ningún mensaje fue encontrado</p>
                 <p class="txt-ne-contenido">Ingresa el texto que desees encriptar o desencriptar</p>
             </div>
 
             <!-- Sección que se mostrará cuando haya un texto encriptado o desencriptado -->
-            <div class="encontrado" >
+            <div class="encontrado" id="encontrado" hidden>
                 <div id="texto-resultado" class="texto-resultado">
                     <textarea name="txt-res" id="txt-res" class="txt-res" readonly>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maxime minima quas eos illum, dolores
                         nobis dolor sunt incidunt sequi quo, temporibus tempora ducimus? Dolor ab officiis id a nobis!

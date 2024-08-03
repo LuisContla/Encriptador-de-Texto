@@ -1,5 +1,5 @@
-// Expresión Regular que permite solo letras, minpusculas y sin acentos
-const regex = /^[a-z]+$/;
+// Expresión Regular que permite solo letras, minúsculas y sin acentos
+const regex = /^[a-z]([a-z]|\s)*$/;
 
 // Funcón para validar que el texto poroporcionado cumpla con los requisitos establecidos
 function validar(op) {
@@ -7,6 +7,9 @@ function validar(op) {
     var texto = document.getElementById("texto-acciones").value;
     // Elemento de HTML donde se muestra el texto resultante
     const resultado = document.getElementById("texto-resultado");
+    // Elementos donde se muestra el texto encriptado/desencriptado o imagen en caso de no haber texto
+    const noEncontrado = document.getElementById("no-encontrado");
+    const encontrado = document.getElementById("encontrado");
 
     //Validamos que haya contenido en en textarea
     if (texto != "") {
@@ -19,12 +22,16 @@ function validar(op) {
             alert("El texto cumple las especificaciones");
             if (op == 1) {
                 //El texto se encriptará
-                alert("Encriptando...");
                 encriptar(texto, resultado);
+                encontrado.style.display = "block";
+                noEncontrado.style.display = "none";
+                
+
             } else {
                 //El texto se desencriptará
-                alert("Desencriptando...")
                 desencriptar(texto, resultado);
+                encontrado.style.display = "block";
+                noEncontrado.style.display = "none";
             }
 
         } else {
