@@ -1,131 +1,188 @@
 /* Sección de etiquetas globales */
 
-body{
+body {
     background-color: #F3F5FC;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header{
-    background-color: red;
-}
-
-textarea::placeholder{
+textarea::placeholder {
     color: #0A3871;
 }
 
-.texto-acciones{
+.texto-acciones {
     outline: none;
     border: none;
     resize: none;
     color: #0A3871;
-    font-size: 25px;
+    font-size: 1.5rem;
     font-weight: bold;
     background-color: transparent;
     width: 90%;
-    height: 300px;
-    background-color: palevioletred;
+    height: 400px;
 }
 
-.txt-res{
+.txt-res {
     outline: none;
     border: none;
     resize: none;
     color: #0A3871;
-    font-size: 15px;
+    font-size: 1rem;
     font-weight: bold;
-    background-color: transparent;
-    width: 90%;
-    height: auto;
+    text-align: left;
+    background-color: transparent;  
+    width: auto;
+    height: fit-content;
 }
 
 /* Sección de ontenido principal */
 
-.contenedor-principal{
+.contenedor-principal {
     /*text-align: center;*/
     display: flex;
+    align-items: center;
+    align-content: center;
     justify-content: space-evenly;
-    background-color: aqua;
 }
 
 /* Sección de encriptar o desencriptar (Derecho) */
 
-.texto-encriptar{
-    background-color: green;
+.texto-encriptar {
     align-items: center;
+    align-content: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    font-size: 24;
+    font-size: 1.5rem;
     width: 70%;
     padding: 20px;
 }
 
-.advertencia{
+.advertencia {
     color: #495057;
-    margin-bottom: 1rem;
-    background-color: blueviolet;
+    font-size: 0.75rem;
 }
 
-.botones-acciones{
-    background-color: orange;
+.botones-acciones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 /* Sección de resultado (Izquierda) */
 
-.texto-desencriptar{
-    background-color: yellow;
+.texto-desencriptar {
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column;
     width: 20%;
+    height: fit-content;
     border-radius: 1rem;
     padding: 20px;
 }
 
-.txt-ne-titulo{
+.txt-ne-titulo {
     font-weight: bold;
-    font-size: 20px;
-}
-.txt-ne-contenido{
-    font-size: 15px;
+    font-size: 1.25rem;
 }
 
-.img-no-encontrado{
+.txt-ne-contenido {
+    font-size: 1rem;
+}
+
+.img-no-encontrado {
     width: 100%;
 }
 
 /* Botones */
 
-.boton-activado-1{
+.boton-activado-1 {
     background-color: #0A3871;
     color: white;
     padding: 10px;
-    width: 20%;
+    width: 25%;
     border-radius: 1rem;
     border-color: #0A3871;
     font-weight: bold;
+    margin: 0.25rem;
 }
-.boton-activado-2{
+
+.boton-activado-2 {
     background-color: transparent;
     color: #0A3871;
     padding: 10px;
-    width: 20%;
+    width: 25%;
     border-radius: 1rem;
     border-color: #0A3871;
     font-weight: bold;
+    margin: 0.25rem;
 }
 
-footer{
+.boton-copiar-diseno {
+    background-color: transparent;
+    color: #0A3871;
+    padding: 10px;
+    width: 75%;
+    border-radius: 1rem;
+    border-color: #0A3871;
+    font-weight: bold;
+    margin: 0.25rem;
+}
+
+footer {
     padding: 20px;
     background-color: #0A3871;
     color: white;
     text-align: center;
 }
 
-.contacto{
+.contacto {
     color: white;
     font-weight: bold;
+}
+
+@media (max-width: 821px) {
+    .contenedor-principal {
+        flex-direction: column;
+    }
+
+    .texto-encriptar {
+        width: 90%;
+    }
+
+    .texto-desencriptar {
+        width: 90%;
+    }
+
+    .img-no-encontrado {
+        display: none;
+    }
+
+    .txt-res{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 421px) {
+
+    .texto-acciones{
+        height: 250px;
+    }
+
+    .botones-acciones {
+        flex-direction: column;
+    }
+
+    .boton-activado-1 {
+        width: 75%;
+    }
+
+    .boton-activado-2 {
+        width: 75%;
+    }
+
 }
