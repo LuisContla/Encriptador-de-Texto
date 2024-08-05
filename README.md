@@ -104,3 +104,6 @@ const copiarContenido = async () => {
 
 - [@LuisContla](https://github.com/LuisContla)
 
+Proyecto creado para el "Challenge Encriptador de texto" de Alura wn lw curso "ONE - Oracle Next Education"
+
+![Insignia](https://media.discordapp.net/attachments/635273333491105832/1270142568482471987/Decodificador_de_texto.png?ex=66b29ff2&is=66b14e72&hm=b3fe4241c970b72483132d6769cc8c4efc40786d8a13e9561d3638fdd94b18e0&=&format=webp&quality=lossless&width=660&height=660)
