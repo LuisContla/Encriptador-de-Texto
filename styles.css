@@ -35,7 +35,6 @@ textarea::placeholder {
     text-align: left;
     background-color: transparent;  
     width: auto;
-    height: fit-content;
 }
 
 /* Sección de ontenido principal */

@@ -6,7 +6,7 @@ function validar(op) {
     // Elemento de HTML que contiene el texto ingresado por el usuario
     var texto = document.getElementById("texto-acciones").value;
     // Elemento de HTML donde se muestra el texto resultante
-    const resultado = document.getElementById("texto-resultado");
+    const resultado = document.getElementById("txt-res");
     // Elementos donde se muestra el texto encriptado/desencriptado o imagen en caso de no haber texto
     const noEncontrado = document.getElementById("no-encontrado");
     const encontrado = document.getElementById("encontrado");
@@ -52,22 +52,22 @@ function encriptar(texto, resultado) {
         .replace(/a/g, "ai")
         .replace(/o/g, "ober")
         .replace(/u/g, "ufat");
-    resultado.children[0].textContent = txtEncriptado;
+    resultado.textContent = txtEncriptado;
 }
 
-function desencriptar(texto, resultado) {
+function desencriptar(texto, resultado, txtRes) {
     // Usaré la función replace para cambiar las llaves de encriptación con las vocales correspondientes
     let txtDesecriptado = texto.replace(/enter/g, "e")
         .replace(/imes/g, "i")
         .replace(/ai/g, "a")
         .replace(/ober/g, "o")
         .replace(/ufat/g, "u");
-    resultado.children[0].textContent = txtDesecriptado;
+    resultado.textContent = txtDesecriptado;
 }
 
 const copiarContenido = async () => {
     // Obtengo el texto del text area del resultado
-    let txtCopiar = document.getElementById('txt-res').value;
+    let txtCopiar = document.getElementById('txt-res').textContent;
     try {
         await navigator.clipboard.writeText(txtCopiar);
         alert('Contenido copiado al portapapeles');
