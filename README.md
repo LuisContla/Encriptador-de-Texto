@@ -14,7 +14,7 @@ Este es un programa en que que podrás observar las siguientes funcionalidades.
 
 El texto que se desea Encriptar o Desencriptar se coloca en el campo de texto, el cual se indica con el mensaje "Ingrese el texto aquí":
 
-![Ingresar Texto](https://media.discordapp.net/attachments/635273333491105832/1270127459425320980/image.png?ex=66b291e0&is=66b14060&hm=40556c8e5c226d037d4263d6900d62ccb7bce261bbb5f4f1958ab26a148cac07&=&format=webp&quality=lossless&width=813&height=414)
+![Ingresar Texto](https://github.com/user-attachments/assets/97b5117c-01d0-4625-865a-a313c5f3eaf6)
 
 Además, al inicio del programa, al no haber nungín texto encriptado o desencriptado, se muestra un mensaje en el cual se indica que no se ha encontrado ningún texto:
 
