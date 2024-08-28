@@ -18,13 +18,13 @@ El texto que se desea Encriptar o Desencriptar se coloca en el campo de texto, e
 
 Además, al inicio del programa, al no haber nungín texto encriptado o desencriptado, se muestra un mensaje en el cual se indica que no se ha encontrado ningún texto:
 
-![No encontrado](https://media.discordapp.net/attachments/635273333491105832/1270128499369447505/image.png?ex=66b292d8&is=66b14158&hm=78b5114c74c6306d2cb3c1ec39f389d31ea8da8f4fd6b039e3ffa764a541973d&=&format=webp&quality=lossless&width=492&height=659)
+![NoEncontrado](https://github.com/user-attachments/assets/bdad32fd-9416-48e7-9442-3fd1e088b314)
 
 ### Encriptar Texto
 
 Una vez ingresado el texto, para generar el texto encriptado se deberá seleccionar con el botón corrspondiente la opción. En este caso se deberá seleccionar el botón con el texto "Encriptar":
 
-![Encriptar](https://media.discordapp.net/attachments/635273333491105832/1270127459425320980/image.png?ex=66b291e0&is=66b14060&hm=40556c8e5c226d037d4263d6900d62ccb7bce261bbb5f4f1958ab26a148cac07&=&format=webp&quality=lossless&width=813&height=414)
+![Encriptar](https://github.com/user-attachments/assets/4882a976-e1e9-473d-ba31-c888f2f9d439)
 
 La manera en la que se enciptan los mensajes es la siguiente. En las instrucciones del Challenge, se indicaron las llaves de encriptación, las cuales son las siguientes:
 
@@ -48,13 +48,13 @@ let txtEncriptado = texto.replace(/e/g, "enter")
 
 Una vez finalizada la encriptación, se reemplazará el mensaje de "No encontrado" (o el texto actual), mostrado anteriormente por el texto encriptado:
 
-![Encriptado](https://media.discordapp.net/attachments/635273333491105832/1270130017027887185/image.png?ex=66b29441&is=66b142c1&hm=f6553b4733fdc49a9e59aa371063e2326687b86e81937df13d72e57fb3ad1c82&=&format=webp&quality=lossless&width=644&height=522)
+![Encriptado](https://github.com/user-attachments/assets/3ec06833-ae9c-4fe6-81f7-b3049531f907)
 
 ### Desencriptar Texto
 
 De manera similar a la encriptación, se deberá de ingresar el texto que se desea Desencriptar y seleccionar el botón con el texto "Desencriptar":
 
-![Desencriptar](https://media.discordapp.net/attachments/635273333491105832/1270128027703181393/image.png?ex=66b29267&is=66b140e7&hm=c7f2448916080e0a64d2a9618fc1abb44bd25db8d91170008bfa3ae5c086ba8c&=&format=webp&quality=lossless&width=463&height=85)
+![Desencriptar](https://github.com/user-attachments/assets/bbf504dd-1e91-4da4-8550-0d44e91be74b)
 
 Tomando de base la función replace() que utilicé en la encriptación, de igual manera la utilicé en el desencriptado, invirtiendo las llaves de encriptación y las vocales:
 
@@ -67,13 +67,13 @@ let txtEncriptado = texto.replace(/e/g, "enter")
 ```
 Una vez finalizada la desencriptación, se reemplazará el mensaje de "No encontrado" (o el texto actual), mostrado anteriormente por el texto desencriptado:
 
-![Desencriptado](https://media.discordapp.net/attachments/635273333491105832/1270129891714535566/image.png?ex=66b29424&is=66b142a4&hm=889c54ed7b1aefb89c1308709c3b7353ea51af4928ab38b56ca917a0f74c78ef&=&format=webp&quality=lossless&width=651&height=385)
+![Desencriptado](https://github.com/user-attachments/assets/b83f9ee7-64f5-4ab5-b1e2-0fd81308bd93)
 
 ### Copiar Texto Resultante
 
 Como se puede observar en las capturas anteriores, en el testo resultante se encuentra un botón con e texto "Copiar":
 
-![Copiar](https://media.discordapp.net/attachments/635273333491105832/1270139241619525772/image.png?ex=66b29cd9&is=66b14b59&hm=69f253903f13331b5d7b758ea135a34b7912f2795839c099a37895e980adf965&=&format=webp&quality=lossless&width=574&height=139)
+![Copiar](https://github.com/user-attachments/assets/57fa8e8f-5436-4019-9784-c26cd5a58aeb)
 
 Al hacer clic se copiará el texto actual al portapapeles. Esto lo logré de la siguiente manera:
 
@@ -103,6 +103,6 @@ const copiarContenido = async () => {
 
 - [@LuisContla](https://github.com/LuisContla)
 
-Proyecto creado para el "Challenge Encriptador de texto" de Alura wn lw curso "ONE - Oracle Next Education"
+Proyecto creado para el "Challenge Encriptador de texto" de Alura en el curso "ONE - Oracle Next Education"
 
-![Insignia](https://media.discordapp.net/attachments/635273333491105832/1270142568482471987/Decodificador_de_texto.png?ex=66b29ff2&is=66b14e72&hm=b3fe4241c970b72483132d6769cc8c4efc40786d8a13e9561d3638fdd94b18e0&=&format=webp&quality=lossless&width=660&height=660)
+![InsigniaOneChallenge](https://github.com/user-attachments/assets/0a961ef9-7b03-44bd-8453-97e1ecbfea04)
